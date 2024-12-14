@@ -33,7 +33,7 @@ console.log(params);
   }
 
   return (
-    <div className="h-full px-2 w-full text-xl text-justify">
+    <div className="h-full px-2 w-full text-xl text-justify overflow-x-hidden">
       {article.length > 0 ? (<div dangerouslySetInnerHTML={{ __html: article }}/>) : (<p>'brak'</p>)}
     </div>
   );

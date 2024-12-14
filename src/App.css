@@ -17,3 +17,43 @@
 .keyword {
   @apply bg-gray-500 p-1 rounded-md inline font-mono;
 }
+
+.article {
+  @apply p-5 text-justify text-white text-xl leading-loose;
+}
+
+.title {
+  @apply text-4xl w-full font-bold;
+}
+
+.p {
+  @apply py-3 block;
+}
+
+.ul {
+  @apply list-disc pl-6;
+}
+
+.h2 {
+  @apply font-bold text-3xl pb-4 pt-6;
+}
+
+.h3 {
+  @apply font-bold text-2xl pb-4 pt-6;
+}
+
+td, th {
+  @apply border text-center py-4 px-4;
+}
+
+thead tr:first-child th {
+  @apply font-bold text-2xl; 
+}
+/* modyfikacja klas daisyui */
+.mockup-code {
+  @apply my-2;
+}
+
+.kbd {
+  @apply !border-b-[1px] min-h-6 leading-8 text-white;
+}

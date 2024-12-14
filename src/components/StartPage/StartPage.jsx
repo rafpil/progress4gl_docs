@@ -25,7 +25,7 @@ const StartPage = () => {
                 <ul className="ul">
                     <li>
                         <h3 className="h3">Słowa kluczowe</h3>
-                        <span className="keyword">DEFINE</span> - deklaracja zmiennej kod
+                        <kbd className="kbd">DEFINE</kbd> - deklaracja zmiennej kod
                     </li>
                     <li>
                         <h3 className="h3 !pb-0">Blok kodu</h3>
