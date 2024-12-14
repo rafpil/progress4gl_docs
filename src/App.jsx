@@ -1,20 +1,35 @@
+import "./App.css";
 
-import './App.css'
-import Footer from './components/Footer/footer'
-import Navbar from './components/Navbar/Navbar'
-import Sidebar from './components/Sidebar/Sidebar'
+
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import StartPage from "./components/StartPage/StartPage";
+import Layout from "./components/Layout/Layout";
+import MainContent from "./components/MainContent/MainContent";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />, // Używamy Layout jako głównego elementu
+    children: [
+      {
+        index: true,
+        element: <StartPage />,
+      },
+      {
+        path: ":id",
+        element: <MainContent />,
+      },
+      {
+        path: "/a",
+        element: <div>a</div>,
+      },
+    ],
+  },
+]);
 
 function App() {
-
-  return (
-    <div className='main-content'>
-      <div className='header'>
-        <Navbar />
-      </div>
-      <div class='sidebar overflow-hidden overflow-y-auto'> <Sidebar /> </div>
-      <div class='footer'> <Footer /> </div>
-    </div>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

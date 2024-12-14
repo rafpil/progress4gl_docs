@@ -1,5 +1,5 @@
 .main-content {
-  @apply grid min-h-full grid-cols-[20rem_1fr] grid-rows-[5rem_1fr_5rem] max-h-full;
+  @apply grid min-h-full grid-cols-[20rem_1fr] grid-rows-[5rem_1fr_5rem];
 }
 
 .header {
@@ -12,4 +12,8 @@
 
 .footer {
   @apply col-span-full;
+}
+
+.keyword {
+  @apply bg-gray-500 p-1 rounded-md inline font-mono;
 }
